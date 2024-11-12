@@ -4,7 +4,7 @@ import 'package:login/src/constants/colors.dart';
 import 'package:login/src/constants/image_strings.dart';
 import 'package:login/src/constants/text_strings.dart';
 import 'package:login/src/features/authentication/models/on_boarding_model.dart';
-import '../screens/splash_screen/on_boarding_page_widget.dart';
+import '../screens/on_boarding/on_boarding_page_widget.dart';
 
 class OnBoardingController extends GetxController {
   final controller = LiquidController();

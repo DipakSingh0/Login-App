@@ -20,4 +20,4 @@ const String welcomeSubTitle = "Lets begin our journey";
 const String login = "Login";
 const String signup = "SignUp";
 
-const String loginSubTitle = "Enter your credentials to login";
+// const String loginSubTitle = "Enter your credentials to login";
