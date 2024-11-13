@@ -51,6 +51,9 @@ flutter:
     - assets/images/splash/
     - assets/images/bording/
     - assets/images/welcome_images/
+    - assets/logo/
+    - assets/images/loginsignup/
+
 
 
 

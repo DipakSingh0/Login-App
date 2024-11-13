@@ -18,6 +18,27 @@ const String welcomeSubTitle = "Lets begin our journey";
 
 //login and signup
 const String login = "Login";
-const String signup = "SignUp";
+const String signup = " SignUp";
 
-// const String loginSubTitle = "Enter your credentials to login";
+
+// login screen text
+const String loginTitle = "Welcome Back";
+const String loginSubTitle = "Let's Do it";
+const String forgetPassword = "Forget Password?";
+const String signInWithGoogle = "Sign-In with Google";
+const String signInWithFacebook = "Sign-In with Facebook";
+const String rememberMe = "Remember me?";
+const String dontHaveAccount = "Don't have an Account?";
+
+
+// sign up screen text
+const String signupTitle = "Get On Board!";
+const String signupSubTitle = "Create you profile to start your Journey with us...";
+const String alreadyHaveAccount = "Already have an Account?";
+
+const String fullName = "Full Name";
+const String email = "Email";
+const String phoneNo = "Phone Number";
+const String password = "Password";
+
+

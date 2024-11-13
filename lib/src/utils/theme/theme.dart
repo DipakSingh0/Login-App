@@ -103,26 +103,34 @@ class AppTheme {
     //     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
     //   ),
     // ),
+
     inputDecorationTheme: InputDecorationTheme(
-      fillColor: Colors.white,
-      filled: true,
-      enabledBorder: OutlineInputBorder(
-        borderSide: BorderSide(color: Colors.grey),
-      ),
-      prefixIconColor: lightLabelColor,
-      labelStyle: TextStyle(
-        fontFamily: "Poppins",
-        fontSize: 15,
-        color: lightFontColor,
-        fontWeight: FontWeight.w500,
-      ),
-      hintStyle: TextStyle(
-        fontFamily: "Poppins",
-        fontSize: 15,
-        color: lightFontColor,
-        fontWeight: FontWeight.w500,
-      ),
-    ),
+        border: OutlineInputBorder(),
+        prefixIconColor: secondaryColor,
+        floatingLabelStyle: TextStyle(color: secondaryColor),
+        focusedBorder: OutlineInputBorder(
+          borderSide: BorderSide(width: 2.0, color: secondaryColor),
+        )),
+    // inputDecorationTheme: InputDecorationTheme(
+    //   fillColor: Colors.white,
+    //   filled: true,
+    //   enabledBorder: OutlineInputBorder(
+    //     borderSide: BorderSide(color: Colors.grey),
+    //   ),
+    //   prefixIconColor: lightLabelColor,
+    //   labelStyle: TextStyle(
+    //     fontFamily: "Poppins",
+    //     fontSize: 15,
+    //     color: lightFontColor,
+    //     fontWeight: FontWeight.w500,
+    //   ),
+    //   hintStyle: TextStyle(
+    //     fontFamily: "Poppins",
+    //     fontSize: 15,
+    //     color: lightFontColor,
+    //     fontWeight: FontWeight.w500,
+    //   ),
+    // ),
     cardTheme: CardTheme(
       color: Colors.white,
       shadowColor: Colors.grey.withOpacity(0.3),
@@ -237,26 +245,34 @@ class AppTheme {
     //         borderRadius: BorderRadius.circular(12)),
     //   ),
     // ),
-    inputDecorationTheme: const InputDecorationTheme(
-      fillColor: darkBgColor,
-      filled: true,
-      enabledBorder: OutlineInputBorder(
-        borderSide: BorderSide(color: Colors.white),
-      ),
-      prefixIconColor: darkLabelColor,
-      labelStyle: TextStyle(
-        fontFamily: "Poppins",
-        fontSize: 15,
-        color: darkFontColor,
-        fontWeight: FontWeight.w500,
-      ), // TextStyle
-      hintStyle: TextStyle(
-        fontFamily: "Poppins",
-        fontSize: 15,
-        color: darkFontColor,
-        fontWeight: FontWeight.w500,
-      ), // TextStyle
-    ),
+
+    inputDecorationTheme: InputDecorationTheme(
+        border: OutlineInputBorder(),
+        prefixIconColor: primaryColor,
+        floatingLabelStyle: TextStyle(color: primaryColor),
+        focusedBorder: OutlineInputBorder(
+          borderSide: BorderSide(width: 2.0, color: primaryColor),
+        )),
+    // inputDecorationTheme: const InputDecorationTheme(
+    //   fillColor: darkBgColor,
+    //   filled: true,
+    //   enabledBorder: OutlineInputBorder(
+    //     borderSide: BorderSide(color: Colors.white),
+    //   ),
+    //   prefixIconColor: darkLabelColor,
+    //   labelStyle: TextStyle(
+    //     fontFamily: "Poppins",
+    //     fontSize: 15,
+    //     color: darkFontColor,
+    //     fontWeight: FontWeight.w500,
+    //   ), // TextStyle
+    //   hintStyle: TextStyle(
+    //     fontFamily: "Poppins",
+    //     fontSize: 15,
+    //     color: darkFontColor,
+    //     fontWeight: FontWeight.w500,
+    //   ), // TextStyle
+    // ),
     cardTheme: CardTheme(
       color: darkCardColor, // Dark background color for the card
       shadowColor: Colors.black.withOpacity(0.6), // Shadow color
@@ -265,3 +281,28 @@ class AppTheme {
     ),
   );
 }
+
+
+
+// import 'package:flutter/material.dart';
+// import 'text_field_theme.dart';
+
+// class AppTheme {
+//   AppTheme._();
+
+//   static ThemeData lightTheme = ThemeData(
+//     brightness: Brightness.light , 
+//     textTheme: TextTheme.lightTextTheme , 
+//     elevatedButtonTheme: ElevatedButtonTheme.lightElevatedButtonTheme , 
+//     outlinedButtonTheme: OutlinedButtonTheme.lightOutlinedButtonTheme , 
+//     inputDecorationTheme: TextFormFieldTheme.lightInputDecorationTheme , 
+//   );
+
+//   static ThemeData darkTheme = ThemeData(
+//     brightness: Brightness.dark , 
+//     textTheme: TextTheme.darkTextTheme , 
+//     elevatedButtonTheme: ElevatedButtonTheme.darkElevatedButtonTheme , 
+//     outlinedButtonTheme: OutlinedButtonTheme.darkOutlinedButtonTheme , 
+//     inputDecorationTheme: TextFormFieldTheme.darkInputDecorationTheme , 
+//   );
+// }

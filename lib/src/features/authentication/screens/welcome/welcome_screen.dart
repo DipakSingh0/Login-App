@@ -7,20 +7,17 @@ import 'package:login/src/constants/colors.dart';
 import 'package:login/src/constants/image_strings.dart';
 import 'package:login/src/constants/sizes.dart';
 import 'package:login/src/constants/text_strings.dart';
-
+import 'package:login/src/features/authentication/screens/login/login_screen.dart';
+import 'package:login/src/features/authentication/screens/signup/signup_screen.dart';
 
 class WelcomeScreen extends StatelessWidget {
   WelcomeScreen({super.key});
 
- 
-
   @override
   Widget build(BuildContext context) {
-
-     // creating instance of controller
+    // creating instance of controller
     final controller = Get.put(FadeInAnimationController());
     controller.startAnimation();
-
 
     var mediaQuery = MediaQuery.of(context);
     var screenHeight = mediaQuery.size.height;
@@ -34,30 +31,25 @@ class WelcomeScreen extends StatelessWidget {
             FadeInAnimation(
               durationMs: 1600,
               animatePosition: AnimatePosition(
-                bottomBefore: -100 , 
-                bottomAfter: 0 , 
-                leftAfter: 0 , 
-                leftBefore: 0, 
-                topAfter:  0 , 
-                topBefore:  0 , 
-                rightAfter:  0,
-                rightBefore:  0,
+                bottomBefore: -100,
+                bottomAfter: 0,
+                leftAfter: 0,
+                leftBefore: 0,
+                topAfter: 0,
+                topBefore: 0,
+                rightAfter: 0,
+                rightBefore: 0,
               ),
               child: Container(
                 padding: EdgeInsets.all(defaultPading),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    //  Image(
-                    //           image: AssetImage(welcomeImage),
-                    //           height: screenHeight * 0.6,
-                    //         ),
                     SizedBox(height: 10),
                     Image(
-                      image: AssetImage(welcomeImage),
+                      image: AssetImage(welcomeScreenImage),
                       height: screenHeight * 0.4,
                     ),
-              
                     Column(
                       children: [
                         Text(
@@ -75,16 +67,18 @@ class WelcomeScreen extends StatelessWidget {
                       children: [
                         Expanded(
                             child: OutlinedButton(
-                                style: Theme.of(context).outlinedButtonTheme.style,
-                                onPressed: () {},
+                                style:
+                                    Theme.of(context).outlinedButtonTheme.style,
+                                onPressed: () => Get.to(LoginScreen()),
                                 child: Text(login.toUpperCase()))),
                         SizedBox(
                           width: 10,
                         ),
                         Expanded(
                             child: ElevatedButton(
-                                style: Theme.of(context).elevatedButtonTheme.style,
-                                onPressed: () {},
+                                style:
+                                    Theme.of(context).elevatedButtonTheme.style,
+                                onPressed: () => Get.to(SignupScreen()),
                                 child: Text(signup.toUpperCase())))
                       ],
                     )

@@ -14,8 +14,6 @@ class SplashScreen extends StatelessWidget {
     var screenHeight = MediaQuery.of(context).size.height;
     var screenWidth = MediaQuery.of(context).size.width;
 
-    // FadeInAnimationController.find.startAnimation();
-
     // initializing the animation using controller
     final controller = Get.put(FadeInAnimationController());
     controller.startSplashAnimation();
