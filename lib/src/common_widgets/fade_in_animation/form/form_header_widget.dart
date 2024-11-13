@@ -7,18 +7,28 @@ class FormHeaderWidget extends StatelessWidget {
     required this.image,
     required this.title,
     required this.subTitle,
+    this.imageColor,
+    this.imageHeight,
+    this.heightBetween,
+    this.crossAxisAlignment = CrossAxisAlignment.start, this.textAlign,
   });
 
   final String image, title, subTitle;
+  final Color? imageColor;
+  final double? imageHeight ;
+  final double? heightBetween;
+  final CrossAxisAlignment crossAxisAlignment;
+  final TextAlign? textAlign;
 
   @override
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
+      crossAxisAlignment: crossAxisAlignment,
       children: [
         Image(
           image: AssetImage(image),
+          color: imageColor,
           height: size.height * 0.24,
         ),
         Text(
@@ -29,7 +39,7 @@ class FormHeaderWidget extends StatelessWidget {
           height: formHeight - 25,
         ),
         Text(
-          subTitle,
+          subTitle,textAlign: textAlign,
           style: Theme.of(context).textTheme.headlineSmall,
         ),
       ],

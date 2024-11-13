@@ -16,6 +16,8 @@ class MyApp extends StatelessWidget {
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,
       themeMode: ThemeMode.system,
+      defaultTransition: Transition.leftToRight,
+      transitionDuration: const Duration(milliseconds: 500),
       home:  SplashScreen(),
     );
   }

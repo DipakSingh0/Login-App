@@ -14,9 +14,19 @@ const String boardingimage3 = "assets/images/bording/bording3.jpg";
 const String welcomeScreenImage =
     "assets/images/welcome_images/welcome_screen_image.png";
 const String loginScreenImage =
-    "assets/images/loginsignup/welcome_screen_image.png";
+    "assets/images/loginsignup/login_screen_image.png";
 const String signupScreenImage =
     "assets/images/loginsignup/signup_screen_image.png";
 
 // --  login image
 const String googleLogo = "assets/logo/google_logo.png";
+// -- forget password
+const String forgetPasswordImage = "assets/images/forget_password/forgetPassword.png";
+
+
+// --- Dashboard imgaes
+const String userProfileImage = "assets/images/dash/userProfile.png";
+const String bannerImage1 = "assets/images/dash/dash1.png"; // lambo
+const String bannerImage2 = "assets/images/dash/dash2.png";
+const String carImage1 = "assets/images/dash/dash3.png";
+const String carImage2 = "assets/images/dash/dash4.png";

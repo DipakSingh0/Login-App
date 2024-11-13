@@ -132,8 +132,8 @@ class AppTheme {
     //   ),
     // ),
     cardTheme: CardTheme(
-      color: Colors.white,
-      shadowColor: Colors.grey.withOpacity(0.3),
+      color:  Colors.grey[300],
+      shadowColor:Colors.white , 
       elevation: 4, // Elevation for card shadow
       margin: EdgeInsets.all(8),
     ),
@@ -180,9 +180,12 @@ class AppTheme {
           fontSize: 12, fontWeight: FontWeight.w500, color: Colors.white70),
       labelSmall: GoogleFonts.poppins(
           fontSize: 10, fontWeight: FontWeight.w400, color: Colors.white60),
-      bodyLarge: GoogleFonts.poppins(fontSize: 14, color: Colors.white70),
-      bodyMedium: GoogleFonts.poppins(fontSize: 12, color: Colors.white70),
-      bodySmall: GoogleFonts.poppins(fontSize: 10, color: Colors.white60),
+      bodyLarge: GoogleFonts.poppins(
+        fontSize: 14, color: Colors.white70),
+      bodyMedium: GoogleFonts.poppins(
+        fontSize: 12, color: Colors.white70),
+      bodySmall: GoogleFonts.poppins(
+        fontSize: 10, color: Colors.white60),
     ),
 
     elevatedButtonTheme: ElevatedButtonThemeData(
