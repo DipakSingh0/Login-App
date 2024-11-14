@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:login/src/constants/image_strings.dart';
 import 'package:login/src/constants/sizes.dart';
 import 'package:login/src/constants/text_strings.dart';
+import 'dashboard/widgets/appbar.dart';
+import 'dashboard/widgets/banners.dart';
+import 'dashboard/widgets/cards.dart';
+import 'dashboard/widgets/categories.dart';
+import 'dashboard/widgets/search.dart';
 
 class Dashboard extends StatelessWidget {
   const Dashboard({super.key});
@@ -11,38 +15,21 @@ class Dashboard extends StatelessWidget {
     final theme = Theme.of(context);
     return SafeArea(
       child: Scaffold(
-        appBar: AppBar(
-          leading: Icon(
-            Icons.menu,
-            color: theme.iconTheme.color,
-          ),
-          title: Text(
-            appName,
-            style: theme.textTheme.headlineLarge,
-          ),
-          centerTitle: true,
-          elevation: 0,
-          backgroundColor: theme.appBarTheme.backgroundColor,
-          actions: [
-            Container(
-                margin: EdgeInsets.only(right: 20, top: 7),
-                child: IconButton(
-                    onPressed: () {},
-                    icon: Image(
-                      image: AssetImage(userProfileImage),
-                      color: theme.iconTheme.color,
-                    )))
-          ],
-        ),
+        appBar: DashboardAppBarWidget(theme: theme),
         body: SingleChildScrollView(
           child: Container(
             padding: EdgeInsets.all(dashboardPadding),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+                //-----------------------Heading --------------------//
+
                 Text(
                   dashboardTitle,
                   style: theme.textTheme.bodyLarge,
+                ),
+                const SizedBox(
+                  height: 10,
                 ),
                 Text(
                   dashboardHeading,
@@ -53,21 +40,36 @@ class Dashboard extends StatelessWidget {
                 ),
 
                 // -----------SearchBox---------//
-                Container(
-                  decoration: const BoxDecoration(
-                      border: Border(left: BorderSide(width: 4))),
-                    padding: EdgeInsets.symmetric(horizontal: 10 , vertical: 5),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(dashboardSearch,
-                          style: theme.textTheme.displayLarge
-                              ?.apply(color: Colors.grey.withOpacity(0.5))
-                              ),
-                      Icon(Icons.mic , size: 25,)
-                    ],
-                  ),
-                )
+                SearchBoxWidget(theme: theme),
+
+                SizedBox(
+                  height: 20,
+                ),
+
+                //-----------categories-------------//
+                CategoriesWidget(theme: theme),
+
+                SizedBox(
+                  height: 20,
+                ),
+
+                //--------------banners----........//
+
+                BannersWidget(theme: theme),
+
+                SizedBox(
+                  height: 20,
+                ),
+
+                Text(
+                  dashboardTopBrands,
+                  style:
+                      theme.textTheme.displayLarge?.apply(fontSizeFactor: 1.2),
+                ),
+
+                //----------------card-------------------//
+
+                CardsWidget(theme: theme)
               ],
             ),
           ),

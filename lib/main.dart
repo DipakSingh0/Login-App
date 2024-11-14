@@ -19,6 +19,7 @@ class MyApp extends StatelessWidget {
       defaultTransition: Transition.leftToRight,
       transitionDuration: const Duration(milliseconds: 500),
       home:  SplashScreen(),
+      // home: Dashboard()
     );
   }
 }

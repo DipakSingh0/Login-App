@@ -11,7 +11,7 @@ import 'package:login/src/features/authentication/screens/login/login_screen.dar
 import 'package:login/src/features/authentication/screens/signup/signup_screen.dart';
 
 class WelcomeScreen extends StatelessWidget {
-  WelcomeScreen({super.key});
+  const WelcomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
