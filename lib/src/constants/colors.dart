@@ -21,7 +21,7 @@ var cardBgColor = Color.fromARGB(0, 31, 27, 27);
 
 
 // Dark Theme Color
-const darkAppBarColor = Color.fromARGB(255, 57, 54, 54);
+const darkAppBarColor = Colors.black;
 const darkBgColor = Colors.black;
 const darkFontColor = Color(0xFFEEEEEE);
 const darkDivColor = Color(0xff34374B);

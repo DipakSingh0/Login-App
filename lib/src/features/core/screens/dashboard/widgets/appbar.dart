@@ -24,7 +24,7 @@ class DashboardAppBarWidget extends StatelessWidget
       ),
       centerTitle: true,
       elevation: 0,
-      backgroundColor: theme.appBarTheme.backgroundColor,
+      backgroundColor: theme.scaffoldBackgroundColor,
       actions: [
         Container(
             margin: EdgeInsets.only(right: 20, top: 7),

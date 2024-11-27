@@ -12,8 +12,10 @@ class OnBoardingScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
   final obController = OnBoardingController() ; 
+  var theme = Theme.of(context) ; 
     
     return Scaffold(
+      backgroundColor: theme.scaffoldBackgroundColor,
       body: Stack(
         alignment: Alignment.center,
         children: [

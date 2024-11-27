@@ -15,6 +15,7 @@ class Dashboard extends StatelessWidget {
     final theme = Theme.of(context);
     return SafeArea(
       child: Scaffold(
+        // backgroundColor: theme.scaffoldBackgroundColor,
         appBar: DashboardAppBarWidget(theme: theme),
         body: SingleChildScrollView(
           child: Container(

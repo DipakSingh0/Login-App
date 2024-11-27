@@ -5,7 +5,9 @@ import 'package:login/src/constants/colors.dart';
 class AppTheme {
   static ThemeData lightTheme = ThemeData(
     brightness: Brightness.light,
-    scaffoldBackgroundColor: Colors.grey[300],
+    // scaffoldBackgroundColor: Colors.grey[300],
+    scaffoldBackgroundColor: Colors.white,
+
     appBarTheme: AppBarTheme(
       color: lightAppBarColor,
       centerTitle: true, // Center the title
