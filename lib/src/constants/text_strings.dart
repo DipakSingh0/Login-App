@@ -65,3 +65,24 @@ const String dashboardBannerTitle2 = "Buggati";
 const String dashboardBannerSubTitle = "4 cars";
 const String dashboardButton = "View All";
 const String dashboardTopBrands = "Top Brands";
+
+
+// -- profile screen texts
+const String profileTitle = "Profile";
+const String editProfile = "Edit Profile";
+const String logout = "Logout";
+const String profileHeading = "Showroom";
+const String profileSubHeading = "admin123@gmail.com";
+
+// --menu
+const String menu1 = "Profile";
+const String menu2 = "Settings";
+const String menu3 = "Information";
+const String menu4 = "Billing Details";
+const String menu5 = "Cars Management";
+
+// -- update profile screen text
+const String delete = "Delete";
+const String joined = "Joined";
+const String joinedAt = "2024 Oct 01";
+

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:login/src/constants/image_strings.dart';
 import 'package:login/src/constants/text_strings.dart';
+import 'package:login/src/features/core/screens/profile/profile_screen.dart';
 
 class DashboardAppBarWidget extends StatelessWidget
     implements PreferredSizeWidget {
@@ -29,7 +31,9 @@ class DashboardAppBarWidget extends StatelessWidget
         Container(
             margin: EdgeInsets.only(right: 20, top: 7),
             child: IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  Get.to(ProfileScreen());
+                },
                 icon: Image(
                   image: AssetImage(userProfileImage),
                   color: theme.iconTheme.color,

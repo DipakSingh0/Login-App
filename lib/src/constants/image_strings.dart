@@ -36,3 +36,5 @@ const String lambo1 = "assets/images/dash/lambo1.png";
 const String supra1 = "assets/images/dash/supra1.png";
 
 
+// ---- profile page
+const String profileImage = "assets/images/profile/profile_image.png";

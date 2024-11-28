@@ -3,7 +3,6 @@ import 'package:get/get.dart';
 import 'package:login/src/common_widgets/fade_in_animation/animation_design.dart';
 import 'package:login/src/common_widgets/fade_in_animation/fade_in_animation_controller.dart';
 import 'package:login/src/common_widgets/fade_in_animation/fade_in_animation_model.dart';
-// import 'package:login/src/constants/colors.dart';
 import 'package:login/src/constants/image_strings.dart';
 import 'package:login/src/constants/sizes.dart';
 import 'package:login/src/constants/text_strings.dart';

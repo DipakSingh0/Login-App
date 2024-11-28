@@ -2,6 +2,29 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:login/src/constants/colors.dart';
 
+
+// class AppTheme {
+//   AppTheme._();
+//     static ThemeData lightTheme = ThemeData(
+//     brightness: Brightness.light,
+//     appBarTheme : AppBarTheme.lightAppBarTheme,
+//     textTheme : TextTheme.lightTextTheme,
+//     elevatedButtonTheme : ElevatedButtonTheme.lightElevatedButtonTheme,
+//     outlinedButtonTheme : OutlinedButtonTheme.lightoutlinedButtonTheme ,
+//     inputDecorationTheme : InputDecorationTheme.lightInputDecorationTheme,
+
+//     );
+//   static ThemeData darkTheme = ThemeData(
+//     brightness: Brightness.dark,
+//     appBarTheme: AppBarTheme.darkAppBarTheme,
+//     textTheme: TextTheme.darkTextTheme,
+//     elevatedButtonTheme: ElevatedButtonTheme.darkElevatedButtonTheme,
+//     outlinedButtonTheme: OutlinedButtonTheme.darkoutlinedButtonTheme,
+//     inputDecorationTheme: InputDecorationTheme.darkInputDecorationTheme,
+//   );
+
+// }
+
 class AppTheme {
   static ThemeData lightTheme = ThemeData(
     brightness: Brightness.light,

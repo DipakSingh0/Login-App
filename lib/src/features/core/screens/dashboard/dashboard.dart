@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:login/src/constants/sizes.dart';
 import 'package:login/src/constants/text_strings.dart';
-import 'dashboard/widgets/appbar.dart';
-import 'dashboard/widgets/banners.dart';
-import 'dashboard/widgets/cards.dart';
-import 'dashboard/widgets/categories.dart';
-import 'dashboard/widgets/search.dart';
+import 'widgets/appbar.dart';
+import 'widgets/banners.dart';
+import 'widgets/cards.dart';
+import 'widgets/categories.dart';
+import 'widgets/search.dart';
 
 class Dashboard extends StatelessWidget {
   const Dashboard({super.key});
