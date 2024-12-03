@@ -2,9 +2,10 @@
 package="com.example.login">
 
 
-<uses-permission android:name="android.permission.RECEIVE_SMS" />
-<uses-permission android:name="android.permission.READ_SMS" />
- 
+<uses-permission android:name="android.permission.RECEIVE_SMS"/>
+<uses-permission android:name="android.permission.READ_SMS"/>
+<uses-permission android:name="android.permission.INTERNET"/>
+
  
     <application
         android:label="loginapp"

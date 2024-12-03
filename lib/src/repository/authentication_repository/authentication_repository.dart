@@ -65,67 +65,70 @@ class AuthenticationRepository extends GetxController {
     }
   }
 
-  // Future<void> phoneAuthentication(String phoneNo) async {
-  //   await auth.verifyPhoneNumber(
-  //     phoneNumber: phoneNo,
-  //     verificationCompleted: (credentials) async {
-  //       await auth.signInWithCredential(credentials);
-  //     },
-  //     codeSent: (verificationId, resendToken) {
-  //       this.verificationId.value = verificationId ;
-  //     },
-  //     codeAutoRetrievalTimeout: (verificationId) {
-  //       this.verificationId.value = verificationId ;
-  //     },
-  //     verificationFailed: (e) {
-  //       if(e.code == 'invalid-phone-number') {
-  //         Get.snackbar("Error", 'The phone number is invalid.');
-  //       } else {
-  //         Get.snackbar("Error", 'Something went wrong, try again');
-  //       }
-  //     },
-  //   );
-  // }
 
 
-Future<void> phoneAuthentication(String phoneNo) async {
-    try {
-      await auth.verifyPhoneNumber(
-        phoneNumber: phoneNo,
-        verificationCompleted: (credentials) async {
-          try {
-            await auth.signInWithCredential(credentials);
-            print("Verification completed: User signed in successfully.");
-          } catch (signInError) {
-            print("Error during sign-in: $signInError");
-            Get.snackbar("Error", "Failed to sign in with credentials.");
-          }
-        },
-        codeSent: (verificationId, resendToken) {
-          this.verificationId.value = verificationId;
-          print("Code sent to $phoneNo. Verification ID: $verificationId");
-        },
-        codeAutoRetrievalTimeout: (verificationId) {
-          this.verificationId.value = verificationId;
-          print("Auto-retrieval timeout. Verification ID: $verificationId");
-        },
-        verificationFailed: (e) {
-          print("Verification failed: ${e.message}");
-          if (e.code == 'invalid-phone-number') {
-            Get.snackbar("Error", "The phone number is invalid.");
-          } else {
-            Get.snackbar("Error", "Something went wrong, try again.");
-          }
-        },
-      );
-    } catch (e) {
-      // Handle unexpected exceptions
-      print("Unexpected error in phone authentication: $e");
-      Get.snackbar("Error", "An unexpected error occurred. Please try again.");
-    }
-  }
+
+// Future<void> phoneAuthentication(String phoneNo) async {
+//     try {
+//       await auth.verifyPhoneNumber(
+//         phoneNumber: phoneNo,
+//         verificationCompleted: (credentials) async {
+//           try {
+//             await auth.signInWithCredential(credentials);
+//             print("Verification completed: User signed in successfully.");
+//           } catch (signInError) {
+//             print("Error during sign-in: $signInError");
+//             Get.snackbar("Error", "Failed to sign in with credentials.");
+//           }
+//         },
+//         codeSent: (verificationId, resendToken) {
+//           this.verificationId.value = verificationId;
+//           print("Code sent to $phoneNo. Verification ID: $verificationId");
+//         },
+//         codeAutoRetrievalTimeout: (verificationId) {
+//           this.verificationId.value = verificationId;
+//           print("Auto-retrieval timeout. Verification ID: $verificationId");
+//         },
+//         verificationFailed: (e) {
+//           print("Verification failed: ${e.message}");
+//           if (e.code == 'invalid-phone-number') {
+//             Get.snackbar("Error", "The phone number is invalid.");
+//           } else {
+//             Get.snackbar("Error", "Something went wrong, try again.");
+//           }
+//         },
+//       );
+//     } catch (e) {
+//       // Handle unexpected exceptions
+//       print("Unexpected error in phone authentication: $e");
+//       Get.snackbar("Error", "An unexpected error occurred. Please try again.");
+//     }
+//   }
 
  
+
+  Future<void> phoneAuthentication(String phoneNo) async {
+    await auth.verifyPhoneNumber(
+      phoneNumber: phoneNo,
+      verificationCompleted: (credentials) async {
+        await auth.signInWithCredential(credentials);
+      },
+      codeSent: (verificationId, resendToken) {
+        this.verificationId.value = verificationId ;
+      },
+      codeAutoRetrievalTimeout: (verificationId) {
+        this.verificationId.value = verificationId ;
+      },
+      verificationFailed: (e) {
+        if(e.code == 'invalid-phone-number') {
+          Get.snackbar("Error", 'The phone number is invalid.');
+        } else {
+          Get.snackbar("Error", 'Something went wrong, try again');
+        }
+      },
+    );
+  }
+
 
   Future<bool> verifyOTP(String otp) async {
     var credentials = await auth.signInWithCredential(
@@ -138,7 +141,6 @@ Future<void> phoneAuthentication(String phoneNo) async {
 }
 
 /* 
-
  keytool -list -v -keystore "C:\Users\Admin\.android\debug.keystore" -alias androiddebugkey -storepass android -keypass android
  C:\Users\Admin\.android
 */
