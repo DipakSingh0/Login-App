@@ -7,6 +7,7 @@ import 'package:login/src/constants/sizes.dart';
 import 'package:login/src/constants/text_strings.dart';
 import 'package:login/src/features/core/screens/profile/update_profile_screen.dart';
 
+import 'user_management_screen.dart';
 import 'widgets/profile_menu.dart';
 
 class ProfileScreen extends StatelessWidget {
@@ -102,7 +103,9 @@ class ProfileScreen extends StatelessWidget {
                       title: "User Management",
                       theme: theme,
                       icon: LineAwesomeIcons.user_check_solid,
-                      onPress: () {}),
+                      onPress: () {
+                        Get.to(() => UserManagementScreen());
+                      }),
                   const Divider(),
                   const SizedBox(
                     height: 10,

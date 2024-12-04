@@ -56,18 +56,17 @@ flutter:
   uses-material-design: true
 
   assets:
-    # - assets/images/splash/splash_screen_image.png
-    # - assets/images/splash/splash_screen_text.png
-    # - assets/images/car.png
+
     - assets/images/
-    - assets/images/splash/
     - assets/images/bording/
+    - assets/images/dash/
+    - assets/images/forget_password/
+    - assets/images/loginsignup/
+    - assets/images/profile/
+    - assets/images/splash/
     - assets/images/welcome_images/
     - assets/logo/
-    - assets/images/loginsignup/
-    - assets/images/forget_password/
-    - assets/images/dash/
-    - assets/images/profile/
+
 
 
     
