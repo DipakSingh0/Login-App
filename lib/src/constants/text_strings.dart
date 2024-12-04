@@ -68,10 +68,10 @@ const String dashboardTopBrands = "Top Brands";
 
 
 // -- profile screen texts
-const String profileTitle = "Profile";
+const String profilePageTitle = "Profile";
 const String editProfile = "Edit Profile";
 const String logout = "Logout";
-const String profileHeading = "Showroom";
+const String profileHeading = "admin";
 const String profileSubHeading = "admin123@gmail.com";
 
 // --menu
@@ -83,6 +83,12 @@ const String menu5 = "Cars Management";
 
 // -- update profile screen text
 const String delete = "Delete";
-const String joined = "Joined";
+const String joined = "Joined - ";
 const String joinedAt = "2024 Oct 01";
+const String updateProfileButton = "Update Profile";
+const String editProfileTitle = "Edit Profile";
 
+
+
+// -- all user Screen
+const String userScreenHeading = "User Accounts";

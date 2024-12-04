@@ -23,12 +23,12 @@ class UserManagementScreen extends StatelessWidget {
                   Get.back();
                 },
                 icon: const Icon(LineAwesomeIcons.angle_left_solid)),
-            title: Text(profileHeading, style: theme.textTheme.headlineLarge),
+            title: Text(userScreenHeading, style: theme.textTheme.headlineLarge),
             actions: [
               IconButton(
                   onPressed: () {},
                   icon: Icon(
-                      isDark ? LineAwesomeIcons.sun : LineAwesomeIcons.moon)),
+                      isDark ? LineAwesomeIcons.moon : LineAwesomeIcons.sun)),
             ]),
         body: SingleChildScrollView(
             child: Container(
@@ -38,21 +38,7 @@ class UserManagementScreen extends StatelessWidget {
                     builder: (context, snapshot) {
                       if (snapshot.connectionState == ConnectionState.done) {
                         if (snapshot.hasData) {
-                          // UserModel user = snapshot.data as UserModel;
-
-                          // UserModel user = snapshot.data!.first;
-                          // final id = TextEditingController(text: user.id);
-
-                          // -- controllers
-                          // final id = TextEditingController(text: user.id);
-                          // final email = TextEditingController(text: user.email);
-                          // final password =
-                          //     TextEditingController(text: user.password);
-                          // final fullName =
-                          //     TextEditingController(text: user.fullName);
-                          // final phoneNo =
-                          //     TextEditingController(text: user.phoneNo);
-
+                    
                           return   
                             ListView.builder(
                             shrinkWrap: true,
