@@ -25,6 +25,7 @@ class UserRepository extends GetxController {
             colorText: Colors.green,
           ),
         )
+        // ignore: body_might_complete_normally_catch_error
         .catchError((error, stackTrace) {
       Get.snackbar(
         "Error",
@@ -33,7 +34,7 @@ class UserRepository extends GetxController {
         backgroundColor: Colors.redAccent.withOpacity(0.1),
         colorText: Colors.red,
       );
-      print(error.toString());
+      // print(error.toString());
     });
   }
 
